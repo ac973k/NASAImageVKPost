@@ -141,7 +141,7 @@ void NASAImageVKPost::onResultNASA(QNetworkReply *reply) {
 
             foreach(QJsonValue val, jarr){
                 QJsonObject obj = val.toObject();
-                strk = obj.value("copytight").toString();
+                strk = obj.value("copyright").toString();
                 strk += "\n" + obj.value("date").toString();
                 strk += "\n" + obj.value("explanation").toString();
                 attach = obj.value("hdurl").toString();
